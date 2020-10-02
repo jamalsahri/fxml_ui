@@ -1,0 +1,64 @@
+.root
+{
+	
+	-fx-background-image:url('../media/undraw_pair_programming_njlp.png');
+	-fx-background-size:cover;
+}
+
+.state{
+	-fx-background-color: linear-gradient(to left, #df9fbf, #3333ff);
+	-fx-background-radius:100;
+}
+.state:hover{
+	-fx-background-color: #3333ff;
+	-fx-background-radius:100;
+	-fx-scale-x : 1.05;
+    -fx-scale-y : 1.05;
+    -fx-cursor : hand;
+}
+
+.BTN{
+	-fx-background-color: white;
+	-fx-text-fill:linear-gradient(to left, #df9fbf, #3333ff);
+	-fx-background-radius:100;
+	-fx-border-color:#b9a7a7;
+	-fx-border-radius:100;
+	-fx-border-width:0.010;
+}
+.BTN:hover{
+	-fx-background-color: white;
+	-fx-text-fill:white;
+	-fx-background-radius:100;
+	-fx-scale-x : 1.05;
+    -fx-scale-y : 1.05;
+    -fx-cursor : hand;
+}
+
+
+.btn-try{
+	-fx-background-color:  linear-gradient(to left, #ff0080, #ff0066);
+	-fx-text-fill:white;
+	-fx-background-radius:100;
+}
+.btn-try:hover{
+	-fx-background-color: #ff0080;
+	-fx-text-fill:white;
+	-fx-background-radius:100;
+	-fx-scale-x : 1.05;
+    -fx-scale-y : 1.05;
+    -fx-cursor : hand;
+}
+
+.btn-learn-more{
+	-fx-background-color:transparent;
+	-fx-text-fill:#6f6565;
+	-fx-background-radius:100;
+}
+.btn-learn-more:hover{
+	-fx-background-color: white;
+	-fx-text-fill:#255e8d;
+	-fx-background-radius:100;
+	-fx-scale-x : 1.1;
+    -fx-scale-y : 1.1;
+    -fx-cursor : hand;
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-position: right;" stylesheets="@css/welcome.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <GNAvatarView prefHeight="60.0" prefWidth="60.0" type="RECT">
+                     <image>
+                        <Image url="@media/newton.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </GNAvatarView>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="TASK" textAlignment="CENTER" textFill="#29295b">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                           <effect>
+                              <Glow level="0.28" />
+                           </effect>
+                        </Label>
+                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Management.app" textAlignment="CENTER" textFill="#255e8d">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                           <effect>
+                              <Glow level="0.42" />
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton styleClass="btn-learn-more" text="FEATURES">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton styleClass="btn-learn-more" text="WHY USE">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton styleClass="btn-learn-more" text="HOW IT WORKS">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" style="-fx-text-fill: linear-gradient(to left, #ff0080, #ff0066);" text="The Powerful Digital" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" style="-fx-text-fill: linear-gradient(to left, #ff0080, #ff0066);" text="Asset Manager Tool">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" style="-fx-text-fill: linear-gradient(to left, #ff0080, #ff0066);" text="to easily manage your">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" style="-fx-text-fill: linear-gradient(to left, #ff0080, #ff0066);" text="tasks immediately">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Connect as :" textFill="#918d97" VBox.vgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="10.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" prefWidth="100.0" styleClass="btn-try" text="DEVELOPPER">
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" prefWidth="100.0" styleClass="btn-try" text="TESTER">
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="60.0" top="50.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="200.0">
+               <children>
+                  <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="15.0" styleClass="btn-learn-more" text="LEARN MORE" textFill="#6f6565">
+                     <graphic>
+                        <FontAwesomeIconView fill="#bca8a8" glyphName="ARROW_RIGHT" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="60.0" top="25.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

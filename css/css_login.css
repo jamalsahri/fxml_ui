@@ -1,0 +1,20 @@
+.root
+{
+	-fx-background-image:url('../media/bg2.jpg');
+	-fx-background-size:cover;
+}
+
+.login-zone{
+	-fx-background-radius:9;
+	-fx-border-radius:9;
+}
+.forgot-password:hover{
+    -fx-cursor : wait;
+    -fx-underline: true;
+    -fx-text-fill: #ffff00;
+}
+.sign-up:hover{
+    -fx-cursor : wait;
+    -fx-underline: true;
+    -fx-text-fill: #ffff00;
+}
