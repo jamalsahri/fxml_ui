@@ -1,0 +1,6 @@
+.root
+{
+	-fx-background-color: linear-gradient(to left, #ff3399, #6a5acd);
+	-fx-background-radius:9;
+	-fx-border-radius:9;
+}

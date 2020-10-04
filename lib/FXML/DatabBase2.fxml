@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="267.0" maxWidth="556.0" minHeight="267.0" minWidth="556.0" prefHeight="267.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataBaseSettings">
+   <children>
+      <Separator prefWidth="200.0" />
+      <Pane prefHeight="216.0" prefWidth="640.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="16.0" prefHeight="55.0" prefWidth="237.0" text="Address @IP" textAlignment="CENTER" textFill="#836b6b">
+               <font>
+                  <Font name="Segoe UI Light" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="IP" alignment="CENTER" editable="false" layoutX="289.0" layoutY="27.0" prefHeight="33.0" prefWidth="222.0" promptText="127.0.0.1" style="-fx-border-radius: 100; -fx-border-color: #999999; -fx-background-color: #ccf2ff; -fx-background-radius: 100;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="81.0" prefHeight="55.0" prefWidth="237.0" text="Port " textAlignment="CENTER" textFill="#836b6b">
+               <font>
+                  <Font name="Segoe UI Light" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Port" alignment="CENTER" editable="false" layoutX="289.0" layoutY="92.0" prefHeight="33.0" prefWidth="222.0" promptText="27017" style="-fx-border-radius: 100; -fx-border-color: #999999; -fx-background-color: #ccf2ff; -fx-background-radius: 100;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnCheck" layoutX="212.0" layoutY="170.0" onAction="#check" prefHeight="25.0" prefWidth="132.0" ripplerFill="WHITE" style="-fx-background-color: #cccccc;" text="Tester" />
+            <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutY="138.0" prefHeight="17.0" prefWidth="556.0" text="Error Message!" textFill="RED" />
+            <JFXProgressBar fx:id="Progress" layoutY="-3.0" prefHeight="3.0" prefWidth="556.0" secondaryProgress="100.0" />
+         </children>
+      </Pane>
+      <Separator prefWidth="200.0" />
+      <Pane prefHeight="59.0" prefWidth="640.0">
+         <children>
+            <JFXButton fx:id="btnNext" alignment="CENTER" contentDisplay="RIGHT" layoutX="423.0" layoutY="12.0" onAction="#Next" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #cccccc;" text="Suivante    ">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ANGLE_RIGHT" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnNext1" alignment="CENTER" layoutX="19.0" layoutY="12.0" onAction="#Next" prefHeight="28.0" prefWidth="112.0" style="-fx-background-color: #cccccc;" text="    Precedent">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ANGLE_LEFT" size="20" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</VBox>

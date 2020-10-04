@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ap-g" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="785.0" styleClass="ap-g" stylesheets="@../../styles/general.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AppController">
+   <children>
+      <JFXButton id="btn-dev" fx:id="btndev" alignment="CENTER" buttonType="RAISED" layoutX="331.0" layoutY="320.0" onAction="#loginDev" prefHeight="25.0" prefWidth="130.0" styleClass="btn-dev" stylesheets="@../../styles/general.css" text="Connect as Dev" />
+      <JFXButton id="btn-test" fx:id="btntest" alignment="CENTER" buttonType="RAISED" layoutX="331.0" layoutY="365.0" onAction="#loginTest" prefHeight="25.0" prefWidth="130.0" styleClass="btn-test" stylesheets="@../../styles/general.css" text="Connect as Test" />
+      <Label id="label-g" alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="218.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="448.0" styleClass="label-g" stylesheets="@../../styles/general.css" text="Bienvenue dans l'application de gestion des tâches" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <SVGPath accessibleText="Test" content="M0,0L30,42.7C60,85,120,171,180,197.3C240,224,300,192,360,165.3C420,139,480,117,540,101.3C600,85,660,75,720,112C780,149,840,235,900,277.3C960,320,1020,320,1080,282.7C1140,245,1200,171,1260,144C1320,117,1380,139,1410,149.3L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z" fill="#0079b5" focusTraversable="true" mouseTransparent="true" opacity="0.93" stroke="#1c90c9" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </SVGPath>
+   </children>
+</AnchorPane>

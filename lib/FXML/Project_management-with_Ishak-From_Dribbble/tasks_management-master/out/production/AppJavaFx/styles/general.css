@@ -1,0 +1,23 @@
+.ap-g {
+    -fx-background-color :  #ffffff;
+}
+.btn-dev{
+    -fx-background-radius : 50px;
+    -fx-background-color : #0079b5;
+    -fx-font-family : "Century Gothic";
+    -fx-text-fill : #ffffff;
+}
+
+.btn-test {
+      -fx-background-radius : 50px;
+      -fx-background-color : #0079b5;
+      -fx-font-family : "Century Gothic";
+      -fx-text-fill : #ffffff;
+}
+
+.label-g{
+     -fx-background-radius : 50px;
+     -fx-background-color : #0079b5;
+     -fx-font-family : "Century Gothic";
+     -fx-text-fill : #ffffff;
+}

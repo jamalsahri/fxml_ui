@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="723.0" maxWidth="1481.0" minHeight="700.0" minWidth="1200.0" prefHeight="716.0" prefWidth="1368.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dashboard.Dashboard">
+   <children>
+      <Pane prefHeight="716.0" prefWidth="296.0" style="-fx-background-color: #002233; -fx-border-color: #66b3ff; -fx-border-width: 0.4;">
+         <children>
+            <VBox layoutX="13.0" layoutY="252.0" prefHeight="396.0" prefWidth="273.0">
+               <children>
+                  <JFXButton fx:id="dashboard" buttonType="RAISED" graphicTextGap="22.0" onAction="#dashboard" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Dashboard">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="HOME" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="sale" buttonType="RAISED" graphicTextGap="19.0" onAction="#sale" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Sale" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="MONEY" size="25" styleClass="buttonIc" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="purchase" buttonType="RAISED" graphicTextGap="24.0" onAction="#purchase" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Purchase" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="SHOPPING_CART" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="exchange" buttonType="RAISED" graphicTextGap="21.0" onAction="#exchange" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Exchange" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="EXCHANGE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="stock" buttonType="RAISED" graphicTextGap="25.0" onAction="#stock" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Stock" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="DATABASE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="providers" buttonType="RAISED" graphicTextGap="21.0" onAction="#providers" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Providers" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="LIST" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="27.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="Profile" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="USER" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="newProfile" buttonType="RAISED" graphicTextGap="26.0" onAction="#newProfile" prefHeight="45.0" prefWidth="296.0" ripplerFill="#a49e9e" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css" text="New profile" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="PLUS_SQUARE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane layoutX="12.0" layoutY="118.0" prefHeight="119.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: #ddd3d3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="81.0" layoutY="63.0" prefHeight="20.0" prefWidth="112.0" style="-fx-text-fill: #66b3ff; -fx-border-color: #66b3ff; -fx-border-radius: 100;" text="Administrator" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="87.0" prefHeight="17.0" prefWidth="273.0" style="-fx-text-fill: #66b3ff;" text="jamalsahri.js@gmail.com" />
+               </children>
+            </Pane>
+            <Label fx:id="dateTime" alignment="CENTER" layoutX="10.0" layoutY="663.0" prefHeight="26.0" prefWidth="273.0" style="-fx-text-fill: #66b3ff; -fx-border-color: #66b3ff; -fx-border-radius: 100;" text="Friday, January 25, 2019 - 04:53:07" />
+            <ImageView fitHeight="110.0" fitWidth="273.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/foreground.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="59.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-radius: 100; -fx-background-radius: 100;" />
+            <GNAvatarView layoutX="100.0" layoutY="64.0" prefHeight="100.0" prefWidth="100.0">
+               <image>
+                  <Image url="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/img_avatar.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#000032" />
+               </effect>
+            </GNAvatarView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="34.0" prefHeight="17.0" prefWidth="273.0" style="-fx-text-fill: white;" text="Jamal Eddine SAHRI" />
+         </children>
+      </Pane>
+      <Pane layoutX="296.0" prefHeight="716.0" prefWidth="1072.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="56.0" prefWidth="1072.0" style="-fx-border-color: white; -fx-border-width: 0 0 0.4 0; -fx-background-color: white;">
+               <children>
+                  <FontAwesomeIconView fx:id="settings" fill="#999999" glyphName="COG" layoutX="1039.0" layoutY="37.0" onMouseClicked="#settings" size="20" wrappingWidth="19.99998316168785" />
+                  <FontAwesomeIconView fill="#999999" glyphName="BELL" layoutX="995.0" layoutY="36.0" size="20" />
+                  <Label layoutX="49.0" layoutY="14.0" prefHeight="26.0" prefWidth="273.0" style="-fx-text-fill: #999999; -fx-font-size: 20;" text="Dashboard" />
+                  <JFXHamburger layoutX="15.0" layoutY="19.0" prefHeight="17.0" prefWidth="22.0" />
+                  <Label fx:id="notifs" alignment="CENTER" layoutX="1004.0" layoutY="13.0" onMouseClicked="#notifications" prefHeight="16.0" prefWidth="20.0" style="-fx-text-fill: white; -fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: red;" text="15" />
+                  <HBox alignment="CENTER_LEFT" layoutX="436.0" layoutY="12.0" prefHeight="34.0" prefWidth="296.0" spacing="5.0" style="-fx-border-color: #66b3ff; -fx-border-width: 2; -fx-border-radius: 100;">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="SEARCH" size="2em" wrappingWidth="22.00002316402606" />
+                        <JFXTextField prefHeight="74.0" prefWidth="245.0" promptText="Search" style="-fx-prompt-text-fill: #999999; -fx-text-fill: #999999; -fx-font-size: 13;" unFocusColor="#66b3ff">
+                           <focusColor>
+                              <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                 <stops>
+                                    <Stop color="#00cc00" />
+                                    <Stop color="WHITE" offset="0.007662835249042145" />
+                                    <Stop color="#66b3ff" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </focusColor>
+                        </JFXTextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children></Pane>
+            <Pane fx:id="search" layoutY="53.0" prefHeight="665.0" prefWidth="1073.0" style="-fx-background-color: #d9d9d9;">
+               <children>
+                  <Pane layoutX="33.0" layoutY="18.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #ff8c1a; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOURGLASS_HALF" layoutX="36.0" layoutY="39.0" size="33" styleClass="work" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #ff8c1a; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label fx:id="sumOfWHours" alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="35j - 50H " textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Sum of working hours" textFill="#ff8c1a">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="301.0" layoutY="18.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #4dff4d; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PRODUCT_HUNT" layoutX="31.0" layoutY="41.0" size="38" styleClass="product" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #4dff4d; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label fx:id="totalSales" alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="5142" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Total sales" textFill="#4dff4d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="569.0" layoutY="18.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #99ccff; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="MONEY" layoutX="26.0" layoutY="43.0" size="45" styleClass="money" wrappingWidth="48.21428680419922" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #99ccff; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label fx:id="theBox" alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="10520 MAD" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="The box" textFill="#99ccff">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="838.0" layoutY="18.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #ff6666; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/dashboard/css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BELL" layoutX="31.0" layoutY="41.0" size="38" styleClass="notif" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #ff6666; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label fx:id="sumOfNotification" alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="15" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Notifications" textFill="#ff6666">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <AreaChart fx:id="areaChart" layoutX="35.0" layoutY="155.0" prefHeight="163.0" prefWidth="1003.0" style="-fx-background-radius: 8; -fx-background-color: white;" title="Sales">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" style="-fx-stroke-width: 2px;" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis minorTickCount="0" side="LEFT" upperBound="15.0" />
+                    </yAxis>
+                  </AreaChart>
+                  <PieChart fx:id="pieChart1" labelsVisible="false" layoutX="35.0" layoutY="352.0" prefHeight="274.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-border-radius: 8;" />
+                  <PieChart fx:id="pieChart2" labelsVisible="false" layoutX="400.0" layoutY="352.0" prefHeight="274.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 8;" />
+                  <PieChart fx:id="pieChart3" labelsVisible="false" layoutX="765.0" layoutY="352.0" prefHeight="274.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 8;" />
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

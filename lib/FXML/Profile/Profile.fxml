@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="723.0" maxWidth="1481.0" minHeight="700.0" minWidth="1200.0" prefHeight="716.0" prefWidth="1368.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardController">
+   <children>
+      <Pane prefHeight="716.0" prefWidth="296.0" style="-fx-background-color: #002233; -fx-border-width: 0.4;">
+         <children>
+            <VBox layoutX="13.0" layoutY="252.0" prefHeight="396.0" prefWidth="273.0">
+               <children>
+                  <JFXButton buttonType="RAISED" graphicTextGap="22.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Dashboard">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="HOME" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="19.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Sale" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="MONEY" size="25" styleClass="buttonIc" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="24.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Purchase" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="SHOPPING_CART" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="21.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Exchange" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="EXCHANGE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="25.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Stock" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="DATABASE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="21.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Providers" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="LIST" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="27.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="WHITE" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="Profile" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="USER" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" graphicTextGap="26.0" prefHeight="45.0" prefWidth="296.0" ripplerFill="#a49e9e" style="-fx-alignment: LEFT; -fx-background-color: transparent; -fx-text-fill: #ddd3d3;" stylesheets="@css.css" text="New profile" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#ddd3d3" glyphName="PLUS_SQUARE" size="25" styleClass="buttonIc" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane layoutX="12.0" layoutY="118.0" prefHeight="119.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: #ddd3d3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="81.0" layoutY="63.0" prefHeight="20.0" prefWidth="112.0" style="-fx-text-fill: #66b3ff; -fx-border-color: #66b3ff; -fx-border-radius: 100;" text="Administrator" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="87.0" prefHeight="17.0" prefWidth="273.0" style="-fx-text-fill: #66b3ff;" text="jamalsahri.js@gmail.com" />
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="663.0" prefHeight="26.0" prefWidth="273.0" style="-fx-text-fill: #66b3ff; -fx-border-color: #66b3ff; -fx-border-radius: 100;" text="Friday, January 25, 2019 - 04:53:07" />
+            <ImageView fitHeight="110.0" fitWidth="273.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../DashboardFx-master/src/com/gn/module/media/foreground.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="59.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-radius: 100; -fx-background-radius: 100;" />
+            <GNAvatarView layoutX="100.0" layoutY="64.0" prefHeight="100.0" prefWidth="100.0">
+               <image>
+                  <Image url="@../../../DashboardFx-master/src/com/gn/module/media/img_avatar.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#000032" />
+               </effect>
+            </GNAvatarView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="34.0" prefHeight="17.0" prefWidth="273.0" style="-fx-text-fill: white;" text="Jamal Eddine SAHRI" />
+         </children>
+      </Pane>
+      <Pane layoutX="296.0" prefHeight="716.0" prefWidth="1072.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="56.0" prefWidth="1072.0" style="-fx-border-color: white; -fx-border-width: 0 0 0.4 0; -fx-background-color: white;" stylesheets="@css.css">
+               <children>
+                  <FontAwesomeIconView fill="#999999" glyphName="COG" layoutX="1039.0" layoutY="37.0" size="20" wrappingWidth="19.99998316168785" />
+                  <FontAwesomeIconView fill="#999999" glyphName="BELL" layoutX="995.0" layoutY="36.0" size="20" />
+                  <Label layoutX="49.0" layoutY="14.0" prefHeight="26.0" prefWidth="273.0" style="-fx-text-fill: #999999; -fx-font-size: 20;" text="Profile" />
+                  <Label alignment="CENTER" layoutX="1004.0" layoutY="13.0" prefHeight="16.0" prefWidth="20.0" style="-fx-text-fill: white; -fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: red;" text="15" />
+                  <HBox alignment="CENTER_LEFT" layoutX="436.0" layoutY="12.0" prefHeight="34.0" prefWidth="296.0" spacing="5.0" style="-fx-border-color: #66b3ff; -fx-border-width: 2; -fx-border-radius: 100;">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="SEARCH" size="2em" wrappingWidth="22.00002316402606" />
+                        <JFXTextField prefHeight="74.0" prefWidth="245.0" promptText="Search" style="-fx-prompt-text-fill: #999999; -fx-text-fill: #999999; -fx-font-size: 13;" unFocusColor="#66b3ff">
+                           <focusColor>
+                              <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                 <stops>
+                                    <Stop color="#00cc00" />
+                                    <Stop color="WHITE" offset="0.007662835249042145" />
+                                    <Stop color="#66b3ff" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </focusColor>
+                        </JFXTextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <FontAwesomeIconView fill="#999999" glyphName="USER" layoutX="28.0" layoutY="35.0" size="22" styleClass="profile" />
+               </children></Pane>
+            <Pane fx:id="search" layoutY="56.0" prefHeight="665.0" prefWidth="1072.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <Pane prefHeight="139.0" prefWidth="1072.0" style="-fx-background-color: #005580;">
+                     <children>
+                        <Label layoutX="65.0" layoutY="67.0" prefHeight="148.0" prefWidth="147.0" style="-fx-background-color: #4dc3ff; -fx-border-radius: 100; -fx-background-radius: 100;" />
+                        <GNAvatarView layoutX="34.0" layoutY="71.0" prefHeight="139.0" prefWidth="209.0">
+                           <image>
+                              <Image url="@../../../DashboardFx-master/src/com/gn/module/media/img_avatar.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#000032" />
+                           </effect>
+                        </GNAvatarView>
+                        <JFXButton layoutX="89.0" layoutY="160.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="update" stylesheets="@css.css" text="Update" textFill="#7ba6ea">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7ba6ea" glyphName="UPLOAD" size="18" text="" />
+                           </graphic>
+                        </JFXButton>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="112.0" prefHeight="27.0" prefWidth="165.0" style="-fx-text-fill: #66b3ff;" text="jamal.sahri">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Button layoutX="820.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: #99bbff; -fx-border-color: #99bbff; -fx-border-radius: 100; -fx-background-radius: 100;" styleClass="save" stylesheets="@css.css" text="Save change">
+                           <graphic>
+                              <FontAwesomeIconView fill="#99bbff" glyphName="CHECK" size="14" text="" />
+                           </graphic></Button>
+                        <Button layoutX="977.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="81.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: #99bbff; -fx-border-color: #99bbff; -fx-border-radius: 100; -fx-background-radius: 100;" styleClass="home" stylesheets="@css.css" text="Home">
+                           <graphic>
+                              <FontAwesomeIconView fill="#99bbff" glyphName="HOME" size="14" />
+                           </graphic>
+                        </Button>
+                        <Pane layoutX="816.0" layoutY="-17.0" prefHeight="320.0" prefWidth="186.0" style="-fx-background-color: transparent; -fx-border-color: #005580;" visible="false">
+                           <children>
+                              <GridPane layoutX="-1.0" prefHeight="320.0" prefWidth="186.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" prefWidth="0.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Label layoutX="74.0" layoutY="267.0" prefHeight="31.0" prefWidth="128.0" text="First Name" textFill="#005580">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField cache="true" editable="false" layoutX="202.0" layoutY="270.0" prefHeight="25.0" prefWidth="165.0" promptText="Jamal Eddine" style="-fx-background-color: #ccf2ff; -fx-border-color: #005580; -fx-border-radius: 100; -fx-background-radius: 100;" text="Jamal Eddine" />
+                  <Label layoutX="405.0" layoutY="267.0" prefHeight="31.0" prefWidth="128.0" text="Last Name" textFill="#005580">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField editable="false" layoutX="533.0" layoutY="270.0" prefHeight="25.0" prefWidth="165.0" promptText="SAHRI" style="-fx-background-color: #ccf2ff; -fx-border-color: #005580; -fx-border-radius: 100; -fx-background-radius: 100;" text="SAHRI" />
+                  <Label layoutX="74.0" layoutY="317.0" prefHeight="31.0" prefWidth="128.0" text="Email" textFill="#005580">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField cache="true" editable="false" layoutX="202.0" layoutY="320.0" prefHeight="27.0" prefWidth="273.0" promptText="jamalsahri.js@gmail.com" style="-fx-background-color: #ccf2ff; -fx-border-color: #005580; -fx-border-radius: 100; -fx-background-radius: 100;" text="jamalsahri.js@gmail.com" />
+                  <Label layoutX="74.0" layoutY="368.0" prefHeight="31.0" prefWidth="128.0" text="Number Phone" textFill="#005580">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField cache="true" editable="false" layoutX="202.0" layoutY="371.0" prefHeight="27.0" prefWidth="165.0" promptText="+2120609195009" style="-fx-background-color: #ccf2ff; -fx-border-color: #005580; -fx-border-radius: 100; -fx-background-radius: 100;" text="+2120609195009" />
+                  <Label layoutX="74.0" layoutY="419.0" prefHeight="31.0" prefWidth="128.0" text="Address" textFill="#005580">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField cache="true" editable="false" layoutX="202.0" layoutY="422.0" prefHeight="27.0" prefWidth="500.0" promptText="38 rue 20 lemtirif 2 Nahda Khouribga" style="-fx-background-color: #ccf2ff; -fx-border-color: #005580; -fx-border-radius: 100; -fx-background-radius: 100;" text="38 rue 20 lemtirif 2 Nahda Khouribga" />
+                  <JFXButton contentDisplay="RIGHT" layoutX="668.0" layoutY="423.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="update" stylesheets="@css.css" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="441.0" layoutY="321.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="update" stylesheets="@css.css" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="331.0" layoutY="269.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" styleClass="update" stylesheets="@css.css" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="333.0" layoutY="372.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="update" stylesheets="@css.css" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="RIGHT" layoutX="664.0" layoutY="271.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="update" stylesheets="@css.css" text=" ">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane layoutX="85.0" layoutY="507.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #ff8c1a; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOURGLASS_HALF" layoutX="36.0" layoutY="39.0" size="33" styleClass="work" textAlignment="CENTER" />
+                           </children></Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #ff8c1a; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="35j - 50H " textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Sum of working hours" textFill="#ff8c1a">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="316.0" layoutY="507.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #4dff4d; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PRODUCT_HUNT" layoutX="31.0" layoutY="41.0" size="38" styleClass="product" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #4dff4d; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="5142" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Total sales" textFill="#4dff4d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="548.0" layoutY="507.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #99ccff; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="MONEY" layoutX="26.0" layoutY="43.0" size="45" styleClass="money" wrappingWidth="48.21428680419922" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #99ccff; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="10520 MAD" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="The box" textFill="#99ccff">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="779.0" layoutY="507.0" prefHeight="119.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #d9d9d9;">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #ff6666; -fx-border-radius: 5; -fx-background-radius: 5;" stylesheets="@css.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BELL" layoutX="31.0" layoutY="41.0" size="38" styleClass="notif" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="112.0" prefHeight="6.0" prefWidth="200.0" style="-fx-background-color: #ff6666; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label alignment="CENTER" layoutX="103.0" layoutY="6.0" prefHeight="45.0" prefWidth="93.0" text="15" textFill="#837d7d">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="-1.0" layoutY="74.0" prefHeight="17.0" prefWidth="200.0" text="Notifications" textFill="#ff6666">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="248.0" layoutY="142.0" prefHeight="20.0" prefWidth="112.0" style="-fx-text-fill: #66b3ff; -fx-border-color: #66b3ff; -fx-border-radius: 100;" styleClass="changePW" stylesheets="@css.css" text="Administrator" />
+                  <Label layoutX="759.0" layoutY="162.0" prefHeight="20.0" prefWidth="229.0" styleClass="changePW" stylesheets="@css.css" text="Your password is the key to not only" textFill="#5b5a5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="759.0" layoutY="179.0" prefHeight="20.0" prefWidth="229.0" styleClass="changePW" stylesheets="@css.css" text="logging into your account," textFill="#5b5a5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="759.0" layoutY="196.0" prefHeight="20.0" prefWidth="229.0" styleClass="changePW" stylesheets="@css.css" text="but also to changing your username," textFill="#5b5a5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="759.0" layoutY="213.0" prefHeight="20.0" prefWidth="229.0" styleClass="changePW" stylesheets="@css.css" text="changing your email address..." textFill="#5b5a5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="759.0" layoutY="228.0" prefHeight="20.0" prefWidth="229.0" styleClass="changePW" stylesheets="@css.css" text="If you need to change it, " textFill="#5b5a5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="TOP_LEFT" layoutX="750.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: transparent;" styleClass="changePW" stylesheets="@css.css" text="Click, here!" textFill="#8417cd">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor></Button>
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

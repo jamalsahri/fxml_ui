@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.app.sale.SaleController">
+   <children>
+      <JFXTabPane>
+         <tabs>
+            <Tab fx:id="sale" closable="false" text="     Sale     ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.88" prefHeight="596.0" prefWidth="1060.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="29.0" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #81d4fa; -fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;" text="Sale  ID" textFill="#00738c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="saleID" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="29.0" prefHeight="37.0" prefWidth="490.0" style="-fx-background-color: #b3e5fc; -fx-background-radius: 4; -fx-border-radius: 4; -fx-border-color: #81d4fa;" text="JS-54871s58A-IZ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="73.0" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #81d4fa; -fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;" text="Manager" textFill="#00738c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="178.0" layoutY="73.0" prefHeight="37.0" prefWidth="492.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <Label fx:id="managerFullName" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="239.0" text="Jamal Eddine SAHRI">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="35.0" prefWidth="13.0" />
+                              <Label fx:id="managerNumberPhone" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="237.0" text="212 609-195009">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="178.0" layoutY="117.0" prefHeight="37.0" prefWidth="493.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <JFXTextField fx:id="tfClientFullName" alignment="CENTER" focusColor="#8ba4f2" prefHeight="33.0" prefWidth="277.0" promptText="Ishak ZAIL" unFocusColor="#9e7373">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <JFXTextField fx:id="tfClientNumberPhone" alignment="CENTER" focusColor="#8ba4f2" prefHeight="33.0" prefWidth="277.0" promptText="0608570898" unFocusColor="#9e7373">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <JFXButton layoutX="13.0" layoutY="117.0" prefHeight="37.0" prefWidth="160.0" style="-fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;" styleClass="client" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/app/sale/CSS_1.css" text="Client" textFill="#00738c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="161.0" prefHeight="37.0" prefWidth="161.0" style="-fx-background-color: #81d4fa; -fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;" text="Date - Time" textFill="#00738c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="178.0" layoutY="161.0" prefHeight="37.0" prefWidth="493.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <JFXDatePicker fx:id="tfDate" defaultColor="#8ba4f2" prefHeight="34.0" prefWidth="306.0" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <JFXTimePicker fx:id="tfTime" defaultColor="#8ba4f2" prefHeight="33.0" prefWidth="306.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane layoutX="14.0" layoutY="249.0" prefHeight="136.0" prefWidth="658.0" style="-fx-background-radius: 4; -fx-border-radius: 4; -fx-border-color: #81d4fa;">
+                           <content>
+                              <VBox fx:id="itemsSoldVBOX" prefWidth="641.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="3.0" left="1.0" right="1.0" top="4.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets></VBox>
+                           </content>
+                        </ScrollPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="391.0" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #81d4fa; -fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;" text="Mode of Payment" textFill="#00738c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="178.0" layoutY="391.0" prefHeight="37.0" prefWidth="493.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <JFXRadioButton fx:id="Es" prefHeight="35.0" prefWidth="160.0" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #81d444;" text="Espèce" textFill="#051646">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="Mode" />
+                                 </toggleGroup>
+                              </JFXRadioButton>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <JFXRadioButton fx:id="ca" prefHeight="35.0" prefWidth="160.0" selected="true" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #81d444;" text="Cache" textFill="#051646" toggleGroup="$Mode" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <JFXRadioButton fx:id="che" prefHeight="35.0" prefWidth="160.0" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #81d444;" text="Chèque" textFill="#051646" toggleGroup="$Mode" />
+                           </children>
+                        </HBox>
+                        <VBox layoutX="681.0" layoutY="29.0" prefHeight="399.0" prefWidth="365.0" spacing="2.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="377.0" style="-fx-background-color: #b3e5fc; -fx-background-radius: 4 4 0 0; -fx-border-radius: 4 4 0 0; -fx-border-color: #81d4fa;" text="list of available items in stock" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefWidth="200.0" style="-fx-background-color: #81d444;" />
+                              <ScrollPane prefHeight="354.0" prefWidth="365.0" style="-fx-background-radius: 4; -fx-border-radius: 4;">
+                                 <content>
+                                    <VBox fx:id="stockItemsVBOX" prefWidth="362.0" spacing="1.0">
+                                       <padding>
+                                          <Insets left="1.0" top="1.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="179.0" layoutY="435.0" prefHeight="37.0" prefWidth="867.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="55.0" text="Slice" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="102.0" text="Total" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="102.0" text="Payroll amount" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="111.0" text="Rest" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="171.0" text="Date - Time" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="163.0" text="Manager" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="138.0" text="Ticket" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="179.0" layoutY="480.0" prefHeight="37.0" prefWidth="867.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="55.0" text="1" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="102.0" text="1500.00 MAD" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <JFXTextField alignment="CENTER" focusColor="#a86a05" prefHeight="32.0" prefWidth="98.0" promptText="00.00 MAD" style="-fx-prompt-text-fill: #008fb3; -fx-prompt-text-style: bold; -fx-background-radius: 4; -fx-border-radius: 4; -fx-border-color: #ff531a;" unFocusColor="#008fb3">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Separator orientation="VERTICAL" prefHeight="35.0" prefWidth="0.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="103.0" text="1000.00 MAD" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="171.0" text="22/05/2018-12:55" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="163.0" text="Jamal Eddine SAHRI" />
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <HBox prefHeight="35.0" prefWidth="140.0">
+                                 <children>
+                                    <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="41.0" text=" ">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#008fb3" glyphName="EYE" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <Separator opacity="0.56" orientation="VERTICAL" prefHeight="200.0" />
+                                    <JFXButton alignment="CENTER" prefHeight="35.0" prefWidth="99.0" text="Print">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#008fb3" glyphName="PRINT" size="17" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="14.0" layoutY="435.0" prefHeight="82.0" prefWidth="160.0" style="-fx-background-color: #81d4fa; -fx-border-color: #81d444; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <JFXToggleButton prefHeight="47.0" prefWidth="158.0" size="8.0" text="Crédit" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </JFXToggleButton>
+                              <Separator prefWidth="200.0" />
+                              <JFXButton alignment="CENTER" graphicTextGap="5.0" prefHeight="17.0" prefWidth="158.0" text="History" textFill="#00738c">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#00738c" glyphName="HISTORY" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="13.0" layoutY="571.0" prefHeight="29.0" prefWidth="1033.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="31.0" prefWidth="777.0" spacing="10.0">
+                                 <children>
+                                    <JFXButton prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #008fb3; -fx-background-radius: 6; -fx-border-radius: 6; -fx-border-color: #81d4fa;" text="Reset" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: #008fb3; -fx-background-radius: 6; -fx-border-radius: 6; -fx-border-color: #81d4fa;" text="Print the ticket" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Italic" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <JFXButton prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #008fb3; -fx-background-radius: 6; -fx-border-radius: 6;" text="Cancel" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Italic" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #008fb3; -fx-background-radius: 6; -fx-border-radius: 6;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Italic" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="205.0" prefHeight="37.0" prefWidth="657.0" style="-fx-background-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4; -fx-border-color: #81d444;">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="425.0" text="Items sold" textFill="#00738c">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="378.0" spacing="5.0" style="-fx-border-color: #81d4fa; -fx-border-width: 2; -fx-border-radius: 4; -fx-background-color: white; -fx-background-radius: 4;">
+                                 <children>
+                                    <JFXTextField fx:id="searchIdItem" prefHeight="31.0" prefWidth="299.0" promptText="Search using the identifier" style="-fx-prompt-text-fill: #999999; -fx-text-fill: #999999; -fx-font-size: 14;" unFocusColor="#66b3ff">
+                                       <focusColor>
+                                          <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                             <stops>
+                                                <Stop color="#00cc00" />
+                                                <Stop color="WHITE" offset="0.007662835249042145" />
+                                                <Stop color="#66b3ff" offset="1.0" />
+                                             </stops>
+                                          </RadialGradient>
+                                       </focusColor>
+                                       <HBox.margin>
+                                          <Insets left="12.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnSearchItem" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="27.0" prefWidth="25.0" ripplerFill="#8f0b07" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="iconSearch" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/app/sale/CSS_1.css" text=" " textAlignment="CENTER" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#999999" glyphName="SEARCH" size="18" textAlignment="CENTER" wrappingWidth="19.00002316402606" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <JFXToggleButton contentDisplay="RIGHT" layoutX="775.0" layoutY="-10.0" prefHeight="24.0" prefWidth="271.0" size="8.0" text="Complete the information automatically" textFill="#5e200d" toggleColor="#901a1a" toggleLineColor="#f5c431" unToggleColor="#74756e" unToggleLineColor="#686866" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="listOfSales" text="   List of sales   ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.88" prefHeight="596.0" prefWidth="1060.0">
+                     <children>
+                        <HBox layoutX="22.0" layoutY="49.0" prefHeight="37.0" prefWidth="1028.0" style="-fx-background-color: #b3e5fc; -fx-border-color: #81d4fa; -fx-background-radius: 4; -fx-border-radius: 4;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="152.0" text="Sale ID" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="108.0" text="Manager" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="117.0" text="Client" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="111.0" text="Date - Time" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="120.0" text="Mode of payment" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="117.0" text="Number of articles" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="101.0" text="Total (MAD)" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="157.0" text="More informations" textFill="#00738c">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ScrollPane layoutX="22.0" layoutY="93.0" prefHeight="509.0" prefWidth="1043.0" style="-fx-background-radius: 4; -fx-border-radius: 4; -fx-border-color: #33ff33;">
+                           <content>
+                              <VBox prefHeight="508.0" prefWidth="1026.0" spacing="5.0">
+                                 <children>
+                                    <HBox prefHeight="33.0" prefWidth="355.0" style="-fx-border-color: #008fb3; -fx-border-radius: 4;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="152.0" text="JS-54871s58A-IZ" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="116.0" text="Jamal Eddine SAHRI" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="122.0" text="Ishak ZAIL" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="115.0" text="27/01/19 - 12:30" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="128.0" text="CACHE" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="122.0" text="5" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="108.0" text="1500.00 MAD" textFill="#008fb3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton contentDisplay="RIGHT" prefHeight="25.0" prefWidth="156.0" ripplerFill="#d1ff04" style="-fx-background-color: #008fb3;" text="Click here for more " textAlignment="CENTER" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="EYE" />
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="3.0" left="1.0" right="1.0" top="3.0" />
+                                 </padding></VBox>
+                           </content>
+                        </ScrollPane>
+                        <HBox alignment="CENTER" layoutX="22.0" layoutY="3.0" prefHeight="43.0" prefWidth="1028.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="378.0" spacing="5.0" style="-fx-border-color: #81d4fa; -fx-border-width: 2; -fx-border-radius: 4; -fx-background-color: white; -fx-background-radius: 4;">
+                                 <children>
+                                    <JFXTextField fx:id="searchIdItem1" prefHeight="45.0" prefWidth="311.0" promptText="Search using the identifier" style="-fx-prompt-text-fill: #999999; -fx-text-fill: #999999; -fx-font-size: 14;" unFocusColor="#66b3ff">
+                                       <focusColor>
+                                          <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                             <stops>
+                                                <Stop color="#00cc00" />
+                                                <Stop color="WHITE" offset="0.007662835249042145" />
+                                                <Stop color="#66b3ff" offset="1.0" />
+                                             </stops>
+                                          </RadialGradient>
+                                       </focusColor>
+                                       <HBox.margin>
+                                          <Insets left="12.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="btnSearchItem1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="27.0" prefWidth="25.0" ripplerFill="#8f0b07" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="iconSearch" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/app/sale/CSS_1.css" text=" " textAlignment="CENTER" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#999999" glyphName="SEARCH" size="18" textAlignment="CENTER" wrappingWidth="19.00002316402606" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</StackPane>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1070.0" style="-fx-background-color: white;" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/app/sales/CSS_1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.app.sales.SaleController">
+   <children>
+      <JFXTabPane>
+         <tabs>
+            <Tab fx:id="tab_sale" closable="false" text="     Sale     ">
+               <content>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                     <children>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="3.0" VBox.vgrow="SOMETIMES">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="7.0" styleClass="forms" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label fx:id="label_SaleInfos" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="29.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 3 3 0 0; -fx-border-radius: 3 3 0 0;" text="Sale  Informations" textAlignment="CENTER" textFill="#8a7878" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label_saleID" alignment="CENTER" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="JS-54871s58A-IZ" textFill="#400505">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#44c767" size="16" stroke="#44c767" text="ID :" />
+                                                   </graphic>
+                                                </Label>
+                                                <Label fx:id="label_Manager" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Jamal Eddine SAHRI ( Manager )" textFill="#400505">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="label_DateTime" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="25/10/2018 - 12:33:45" textFill="#400505" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="Andalus" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="7.0" styleClass="forms" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <JFXButton fx:id="btn_client" alignment="CENTER" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" prefHeight="29.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 3 3 0 0; -fx-border-radius: 3 3 0 0;" text="Client" textFill="#8a7878">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <Label fx:id="label_clientInfos" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textFill="#800f0f">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="12.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="30.0" right="30.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <JFXTextField fx:id="tf_searchForAClient" focusColor="#0040ff" maxWidth="1.7976931348623157E308" promptText="Search using number phone" unFocusColor="#bea7ff" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="30.0" right="30.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                                <JFXButton fx:id="btn_addNewClient" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" onAction="#addNewClient" ripplerFill="#cf5611" styleClass="myButton" text="Create new client" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="15" />
+                                                   </graphic>
+                                                   <VBox.margin>
+                                                      <Insets bottom="2.0" left="30.0" right="30.0" top="2.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <TableView fx:id="tv_SoldItems" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="203.0" prefWidth="650.0" VBox.vgrow="ALWAYS">
+                                             <columns>
+                                                <TableColumn fx:id="tc_soldReference" prefWidth="145.0" text="Refrence" />
+                                                <TableColumn fx:id="tc_soldMark" prefWidth="120.0" text="Mark" />
+                                                <TableColumn fx:id="tc_soldSize" prefWidth="50.0" text="Size" />
+                                                <TableColumn fx:id="tc_soldPrice" prefWidth="100.0" text="Price" />
+                                                <TableColumn fx:id="tc_soldAmount" text="Amount" />
+                                                <TableColumn fx:id="tc_soldEdit" prefWidth="68.0" text="Edit" />
+                                                <TableColumn fx:id="tc_soldRemove" prefWidth="74.0" text="Remove" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="forms" VBox.vgrow="SOMETIMES">
+                                       <children>
+                                          <Label fx:id="label_modeOfPayment" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="29.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 3 0 0 3; -fx-border-radius: 3 0 0 3;" text="Mode of Payment" textFill="#8a7878" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <JFXRadioButton fx:id="rb_Espece" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #4d4dff;" text="Espèce" textFill="#051646" HBox.hgrow="ALWAYS">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="ModePayement" />
+                                                   </toggleGroup>
+                                                </JFXRadioButton>
+                                                <Separator orientation="VERTICAL">
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <JFXRadioButton fx:id="rb_Cache" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" selected="true" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #4d4dff;" text="Cache" textFill="#051646" toggleGroup="$ModePayement" HBox.hgrow="ALWAYS" />
+                                                <Separator orientation="VERTICAL">
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <JFXRadioButton fx:id="rb_Cheque" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-jfx-unselected-color: #8ba4f2; -jfx-selected-color: #4d4dff;" text="Chèque" textFill="#051646" toggleGroup="$ModePayement" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" spacing="3.0" styleClass="forms" VBox.vgrow="SOMETIMES">
+                                       <children>
+                                          <Label fx:id="label_credit" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="290.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 3 3 0 0; -fx-border-radius: 3 3 0 0;" text="Crédit" textAlignment="CENTER" textFill="#8a7878">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                                   <children>
+                                                      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="label_creditSlice" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Slice" textFill="#7c6c6c" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="label_creditSliceNumber" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="lbl" text="1" textFill="#830404" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="15.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets left="3.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="label_creditTotal" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Total" textFill="#7c6c6c" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="label_creditTotalValue" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="lbl" text="00.00" textFill="#008fb3" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="label_creditPayAmount" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Payroll amount" textFill="#7c6c6c" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <JFXTextField fx:id="tf_payrollAmount" alignment="CENTER" focusColor="#3c00ff" maxWidth="1.7976931348623157E308" promptText="00.00" style="-fx-prompt-text-fill: #008fb3; -fx-prompt-text-style: bold;" styleClass="lbl" unFocusColor="#00cbff" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="label_creditRest" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Rest" textFill="#7c6c6c" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="label_creditRestValue" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="lbl" text="00.00" textFill="#008fb3" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="forms" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="40.0" style="-fx-border-color: #e7dede; -fx-border-radius: 3; -fx-background-color: white; -fx-background-radius: 3;">
+                                       <children>
+                                          <JFXTextField fx:id="tf_searchByRef" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Search using the reference" style="-fx-prompt-text-fill: #999999; -fx-text-fill: black; -fx-font-size: 14;" unFocusColor="#69b6ff00" HBox.hgrow="ALWAYS">
+                                             <focusColor>
+                                                <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                                   <stops>
+                                                      <Stop color="#00cc00" />
+                                                      <Stop color="WHITE" offset="0.007662835249042145" />
+                                                      <Stop color="#0084ff" offset="1.0" />
+                                                   </stops>
+                                                </RadialGradient>
+                                             </focusColor>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </JFXTextField>
+                                          <JFXButton fx:id="btn_add" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" onAction="#addSearchedItem" ripplerFill="WHITE" styleClass="addadd" text="Add" textFill="#6d00b5" HBox.hgrow="SOMETIMES">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="14" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="2.0" right="2.0" />
+                                       </padding>
+                                    </HBox>
+                                    <VBox fx:id="zone_articl_infos" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="label_price" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="price" text="299.00 DH" textFill="#ff1212">
+                                             <font>
+                                                <Font name="Sitka Small Bold Italic" size="26.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="label_mark" alignment="CENTER" maxWidth="1.7976931348623157E308" text="ZARA" textFill="#2f2b2b">
+                                             <font>
+                                                <Font name="Georgia Bold" size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label fx:id="label_referenceItem" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="zara-chemise-coll-officier" VBox.vgrow="SOMETIMES">
+                                             <font>
+                                                <Font name="Cambria" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#a19d9d" size="16" text="Ref          :" textAlignment="CENTER" wrappingWidth="71.826171875" />
+                                             </graphic>
+                                          </Label>
+                                          <Label fx:id="label_designationItem" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Chemise ( L ) - Blue - Coll officier" VBox.vgrow="SOMETIMES">
+                                             <font>
+                                                <Font name="Cambria" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#a19d9d" text="Designation :" />
+                                             </graphic>
+                                          </Label>
+                                          <Label fx:id="label_categoryItem" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Chemise Manche" VBox.vgrow="SOMETIMES">
+                                             <font>
+                                                <Font name="Cambria" size="14.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#a19d9d" size="12" text="Category      :" />
+                                             </graphic>
+                                          </Label>
+                                          <Label fx:id="label_sizeItem" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="L" textFill="#755858" VBox.vgrow="SOMETIMES">
+                                             <font>
+                                                <Font name="Lucida Calligraphy Italic" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#a19d9d" text="Size               :" />
+                                             </graphic>
+                                          </Label>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="forms" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" top="2.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label fx:id="label_PercentageOfSales" maxWidth="1.7976931348623157E308" text="La semaine de 31/03/2019" textFill="#807373" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" spacing="5.0">
+                                                         <children>
+                                                            <JFXProgressBar fx:id="pb_percentageSales" accessibleText="kqjdklqjskjdq" maxWidth="1.7976931348623157E308" progress="0.48" style="-fx-radius: 25;" HBox.hgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                               </padding>
+                                                            </JFXProgressBar>
+                                                            <Label fx:id="label_percentageSalesValue" text="65 %" textFill="#978d8d" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="1.0" top="1.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="label_PercentageOfSales1" maxWidth="1.7976931348623157E308" text="La semaine de 07/04/2019" textFill="#807373" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" spacing="5.0">
+                                                         <children>
+                                                            <JFXProgressBar fx:id="pb_percentageSales1" accessibleText="kqjdklqjskjdq" maxWidth="1.7976931348623157E308" progress="0.59" style="-fx-radius: 25;" HBox.hgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                               </padding>
+                                                            </JFXProgressBar>
+                                                            <Label fx:id="label_percentageSalesValue1" text="65 %" textFill="#978d8d" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="1.0" top="1.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="label_PercentageOfSales2" maxWidth="1.7976931348623157E308" text="La semaine de 14/04/2019" textFill="#807373" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" spacing="5.0">
+                                                         <children>
+                                                            <JFXProgressBar fx:id="pb_percentageSales2" accessibleText="kqjdklqjskjdq" maxWidth="1.7976931348623157E308" progress="0.5" style="-fx-radius: 25;" HBox.hgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                               </padding>
+                                                            </JFXProgressBar>
+                                                            <Label fx:id="label_percentageSalesValue2" text="65 %" textFill="#978d8d" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="1.0" top="1.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="label_PercentageOfSales3" maxWidth="1.7976931348623157E308" text="La semaine de 21/04/2019" textFill="#807373" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="11.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" spacing="5.0">
+                                                         <children>
+                                                            <JFXProgressBar fx:id="pb_percentageSales3" accessibleText="kqjdklqjskjdq" maxWidth="1.7976931348623157E308" progress="0.28" style="-fx-radius: 25;" HBox.hgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                               </padding>
+                                                            </JFXProgressBar>
+                                                            <Label fx:id="label_percentageSalesValue3" text="65 %" textFill="#978d8d" HBox.hgrow="ALWAYS" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="1.0" top="1.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <Separator prefWidth="200.0">
+                                                   <VBox.margin>
+                                                      <Insets bottom="3.0" left="20.0" right="20.0" top="3.0" />
+                                                   </VBox.margin>
+                                                </Separator>
+                                                <VBox VBox.vgrow="ALWAYS">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label fx:id="label_PercentageOfSales4" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Rapport">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" spacing="5.0">
+                                                         <children>
+                                                            <JFXProgressBar fx:id="pb_percentageSales4" accessibleText="kqjdklqjskjdq" maxWidth="1.7976931348623157E308" progress="0.24" style="-fx-radius: 25;" HBox.hgrow="ALWAYS">
+                                                               <padding>
+                                                                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                                               </padding>
+                                                            </JFXProgressBar>
+                                                            <Label fx:id="label_percentageSalesValue4" text="65 %" textFill="#6f6363" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font></Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="1.0" top="1.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                          <Label fx:id="label_Promotion" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" styleClass="promotion" text="PROMOTION 50%" textFill="RED" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Sitka Small Bold Italic" size="26.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="40.0" spacing="5.0" styleClass="forms" VBox.vgrow="SOMETIMES">
+                                             <children>
+                                                <Label fx:id="label_amount" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Amount :" textFill="#8a7878" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <JFXComboBox fx:id="cb_amount" focusColor="#0040ff" promptText="Select amount" style="-fx-background-color: #b3ffff; -fx-background-radius: 4; -fx-border-radius: 4;" unFocusColor="#6ac8ff" HBox.hgrow="SOMETIMES">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                   <HBox.margin>
+                                                      <Insets bottom="2.0" />
+                                                   </HBox.margin>
+                                                </JFXComboBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="2.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="SOMETIMES">
+                                       <children>
+                                          <JFXButton fx:id="btn_reset" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#resetItem" prefHeight="28.0" styleClass="reset" text="Reset" textFill="#4d4dff" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btn_save" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#saveItem" prefHeight="28.0" styleClass="save" stylesheets="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/app/sale/CSS_1.css" text="Save" textFill="#4d4dff" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#44c767" glyphName="BOOKMARK" styleClass="save" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox alignment="BOTTOM_RIGHT" maxWidth="1.7976931348623157E308" spacing="15.0">
+                           <children>
+                              <Separator maxWidth="1.7976931348623157E308" opacity="0.78" VBox.vgrow="ALWAYS" />
+                              <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                 <children>
+                                    <JFXButton fx:id="btn_resetAll" buttonType="RAISED" onAction="#resetAll" prefHeight="31.0" prefWidth="130.0" styleClass="reset" text="Reset" textFill="#4d4dff">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btn_saveAll" buttonType="RAISED" contentDisplay="RIGHT" onAction="#saveAll" prefHeight="31.0" prefWidth="130.0" styleClass="addadd" text="Save" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CHECK" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab fx:id="tab_listOfSales" onSelectionChanged="#configTabListOfSales" text="   List of sales   ">
+               <content>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="forms">
+                           <children>
+                              <JFXTextField fx:id="tf_searchForSale" maxWidth="1.7976931348623157E308" onKeyReleased="#Search" promptText="Search" style="-fx-prompt-text-fill: #999999; -fx-text-fill: #999999; -fx-font-size: 14;" unFocusColor="#66b3ff" HBox.hgrow="ALWAYS">
+                                 <focusColor>
+                                    <RadialGradient centerX="0.4944444444444444" centerY="0.5380952380952381" radius="0.7906976744186047">
+                                       <stops>
+                                          <Stop color="#00cc00" />
+                                          <Stop color="WHITE" offset="0.007662835249042145" />
+                                          <Stop color="#66b3ff" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </focusColor>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="5.0" right="2.0" />
+                           </padding>
+                        </HBox>
+                        <TableView fx:id="tv_listOfSales" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="tc_saleID" prefWidth="220.0" text="Sale id" />
+                              <TableColumn fx:id="tc_manager" prefWidth="150.0" text="Manager" />
+                              <TableColumn fx:id="tc_client" prefWidth="163.0" text="Client" />
+                              <TableColumn fx:id="tc_dateTime" prefWidth="170.0" text="Date - time" />
+                              <TableColumn fx:id="tc_modeOfPayment" prefWidth="150.0" text="Mode of payment" />
+                              <TableColumn fx:id="tc_showMoreInfos" prefWidth="163.0" text="Show more informations" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <children>
+                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;">
+                                 <children>
+                                    <Label fx:id="label_count" alignment="CENTER" prefHeight="28.0" prefWidth="147.0" style="-fx-background-color: transparent;" text="Count" textFill="#806868">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="SORT_NUMERIC_ASC" size="14" />
+                                       </graphic>
+                                    </Label>
+                                    <Label fx:id="count" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 4; -fx-border-radius: 4;" text="20" textFill="#795656">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;">
+                                 <children>
+                                    <Label fx:id="label_sort" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Order by" textFill="#806868">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="SORT" size="14" textAlignment="CENTER" />
+                                       </graphic>
+                                    </Label>
+                                    <JFXComboBox fx:id="sortCritere" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 4; -fx-border-radius: 4;" />
+                                    <JFXComboBox fx:id="sortBy" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #b3ffff; -fx-background-radius: 4; -fx-border-radius: 4;" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content></Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</StackPane>

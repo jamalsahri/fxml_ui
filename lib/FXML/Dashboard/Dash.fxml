@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="700.0" maxWidth="1200.0" minHeight="700.0" minWidth="1200.0" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="700.0" prefWidth="296.0" style="-fx-background-color: #2E2E2E; -fx-border-color: #6C6C6C;">
+         <children>
+            <Pane layoutX="7.0" layoutY="5.0" prefHeight="176.0" prefWidth="281.0" style="-fx-background-color: #2E2E2E; -fx-border-color: #6C6C6C; -fx-border-radius: 30;">
+               <children>
+                  <ImageView fitHeight="88.0" fitWidth="91.0" layoutX="104.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../man%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="87.0" layoutY="106.0" style="-fx-text-fill: white; -fx-text: 34;" text="Jamal Eddine SAHRI" />
+                  <Label layoutX="72.0" layoutY="124.0" style="-fx-text-fill: white;" text="jamalsahri.js@gmail.com" />
+                  <Label alignment="CENTER" layoutX="92.0" layoutY="149.0" prefHeight="20.0" prefWidth="112.0" style="-fx-text-fill: white; -fx-border-color: #45de55; -fx-border-radius: 100;" text="Administrator" />
+               </children>
+            </Pane>
+            <VBox layoutX="7.0" layoutY="190.0" prefHeight="453.0" prefWidth="281.0">
+               <children>
+                  <HBox prefHeight="53.0" prefWidth="281.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" prefHeight="46.0" prefWidth="275.0" ripplerFill="#a49e9e" style="-fx-background-color: transparent;" text="Dashboard" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="296.0" prefHeight="700.0" prefWidth="905.0" style="-fx-background-color: #2E2E2E;">
+         <children>
+            <Pane prefHeight="88.0" prefWidth="1069.0" style="-fx-background-color: p;" />
+            <FontAwesomeIconView defaultGlyph="ANGLE_RIGHT" glyphName="DASHBOARD" layoutX="100.0" layoutY="275.0" size="5em" />
+            <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+            <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+            <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+            <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+      <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+      <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" layoutX="10.0" layoutY="10.0" size="2em" />
+   </children>
+</AnchorPane>

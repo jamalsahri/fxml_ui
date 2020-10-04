@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="745.0" styleClass="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.login.Login">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="745.0" AnchorPane.bottomAnchor="383.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 2.4em; -fx-fill: white;" text="Clothing Store" wrappingWidth="409.13671875">
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="563.0" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="SignUP" buttonType="RAISED" onAction="#SignUp" prefHeight="25.0" prefWidth="83.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-font-size: 1.3em; -fx-font-weight: bold;" text="Sign Up">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="Log" buttonType="RAISED" prefHeight="25.0" prefWidth="83.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-font-size: 1.3em; -fx-font-weight: bold;" text="Login">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton> 
+                  <!--
+                  <Button id="SignUP" fx:id="SignUP" mnemonicParsing="false" onAction="#SignUp" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.3em; -fx-font-weight: bold;" text="Sign Up">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="Log" fx:id="Log" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: transparent; -fx-text-fill: #aeaeae; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-font-size: 1.3em; -fx-font-weight: bold;" text="Login">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  -->
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox layoutX="230.0" layoutY="139.0" prefHeight="226.0" prefWidth="243.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="7.0">
+               <children>
+                  <FontAwesomeIconView fill="#11204d" glyphName="USER" size="1.3em" HBox.hgrow="ALWAYS" />
+                  <JFXTextField fx:id="userName" focusColor="#11204d" prefHeight="31.0" prefWidth="234.0" promptText="username" style="-fx-prompt-text-fill: #273254; -fx-text-fill: #273254; -fx-font-weight: Bold;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="4.0">
+               <children>
+                  <FontAwesomeIconView fill="#11204d" glyphName="KEY" size="1.3em" HBox.hgrow="ALWAYS" />
+                  <JFXPasswordField fx:id="password" focusColor="#11204d" prefHeight="31.0" prefWidth="230.0" promptText="password" style="-fx-prompt-text-fill: #273254; -fx-text-fill: #273254; -fx-font-weight: bold;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXButton fx:id="login" buttonType="RAISED" onAction="#processLogin" prefHeight="33.0" prefWidth="245.0" style="-fx-background-color: #2f2f2fa3; -fx-background-radius: 100; -fx-text-fill: white; -fx-font-weight: bold;" text="  Enter">
+                <VBox.margin>
+                  <Insets top="45.0" />
+                </VBox.margin>
+                <graphic>
+                    <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" size="2em" />
+                </graphic>
+            </JFXButton>
+            <!--
+            layoutX="288.0" layoutY="370.0"
+            <Button id="login" fx:id="login" mnemonicParsing="false" onAction="#processLogin" prefHeight="33.0" prefWidth="245.0" style="-fx-background-color: #2f2f2fa3; -fx-background-radius: 100; -fx-text-fill: white; -fx-font-weight: bold;"  text="      Enter">
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+               <graphic>
+                  <FontAwesomeIconView fill="#d08787" glyphName="ANGLE_RIGHT" size="2em" />
+               </graphic>
+            </Button>
+            -->
+            <HBox prefHeight="44.0" prefWidth="449.0">
+               <children>
+                  <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="449.0" text="" textAlignment="CENTER" textFill="#960000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="393.0" prefHeight="33.0" prefWidth="745.0" style="-fx-background-color: #2f2f2fa3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="#cccacd" strokeType="OUTSIDE" strokeWidth="0.0" text="jamalsahri.js@gmail.com          Designed By: Jamal Eddine SAHRI          Store Management System v1.0" wrappingWidth="531.6923828125">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../../../Documents/NetBeansProjects/SaleManagementSystem/src/view/login/style.css" />
+   </stylesheets>
+</AnchorPane>

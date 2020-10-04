@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane id="pane-left" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="526.0" prefWidth="80.0" styleClass="pane-left" stylesheets="@../../../../styles/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="23.0" fitWidth="18.0" layoutX="29.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/dash.png" />
+               </image></ImageView>
+            <ImageView fitHeight="23.0" fitWidth="18.0" layoutX="29.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </left>
+   <top>
+      <Pane id="pane-top" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="981.0" styleClass="pane-top" stylesheets="@../../../../styles/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="120.0" text="Project X" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="btn-search" layoutX="281.0" layoutY="27.0" prefHeight="33.0" prefWidth="181.0" promptText="Search" styleClass="btn-search" stylesheets="@../../../../styles/dashboard.css">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </TextField>
+            
+            <JFXButton id="btn-add-prjt" layoutX="664.0" layoutY="28.0" prefHeight="31.0" prefWidth="148.0" ripplerFill="#1044d3" styleClass="btn-add-prjt" stylesheets="@../../../../styles/dashboard.css" text="ADD PROJECT" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            
+            <ImageView fitHeight="23.0" fitWidth="19.0" layoutX="903.0" layoutY="31.0" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/notif.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane id="pane-center" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="581.0" prefWidth="899.0" styleClass="pane-center" stylesheets="@../../../../styles/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../OneDrive/Bureau/wave.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

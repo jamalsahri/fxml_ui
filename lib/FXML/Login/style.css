@@ -1,0 +1,17 @@
+.root
+{
+	-fx-background-image:url('TBG.jpg');
+	
+	-fx-background-size:cover;
+}
+.button {
+.login
+{
+   -fx-background-color : linear-gradient(to left, -mint, -success);
+}
+
+.login:focused, .login:hover
+{
+  -fx-background-color : linear-gradient(to left, -success, -mint);
+
+}

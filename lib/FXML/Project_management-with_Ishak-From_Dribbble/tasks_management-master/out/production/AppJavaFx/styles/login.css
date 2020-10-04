@@ -1,0 +1,43 @@
+.ap-l{
+    -fx-background-color : #ffffff;
+}
+
+.ap-r{
+    -fx-background-color : #ffffff;
+}
+
+.button {
+    -fx-background-color : #48CAE4;
+    -fx-font-family : "Century Gothic";
+
+    -fx-background-radius: 50px;
+   }
+
+.username {
+    -fx-
+    -fx-background-color : transparent;
+    -fx-font-family : "Century Gothic";
+    -jfx-focus-color : #48CAE4;
+    -fx-text-inner-color: black ;
+}
+
+.password {
+    -fx-background-color : transparent;
+    -fx-font-family : "Century Gothic";
+    -fx-text-inner-color: #f48CAE4 ;
+    -fx-focus-color : #48CAE4;
+}
+
+.label {
+    -fx-text-fill : #48CAE4;
+    -fx-font-family : "Berlin Sans FB";
+}
+
+.label-error{
+    -fx-text-fill : red;
+    -fx-font-family : "Century Gothic";
+}
+
+.image {
+    -fx-background-color : 90px;
+}

@@ -1,0 +1,9 @@
+.left-menu {
+    -fx-background-radius : 0px 50px 0px 0px;
+    -fx-background-color : #0096C7;
+}
+.btn-add-task {
+    -fx-text-fill :black;
+    -fx-background-color : #FFFFFF;
+    -fx-background-radius : 50px;
+}
