@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" stylesheets="@css/developer-main-ui.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <center>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="70.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="50.0">
+                           <image>
+                              <Image url="@../../../../Discord%20COURS/MIS/PROJET/drawable/devp.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </GNAvatarView>
+                        <Label contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Developer Panel" textFill="#585858">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="80.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" spacing="2.0" style="-fx-background-color: #ebebe090; -fx-background-radius: 50;">
+                           <children>
+                              <JFXTextField fx:id="search" focusColor="#b0c4ff00" promptText="Search" style="-fx-prompt-text: #cdcdcb; -fx-font-weight: bold;" unFocusColor="#4d4d4d00" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXButton fx:id="btnSearch" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" graphicTextGap="0.0" onAction="#searchArticl" ripplerFill="#23ceda" style="-fx-background-radius: 100; -fx-background-color: white;" text=" " textFill="WHITE">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SEARCH" size="12" textAlignment="CENTER" wrappingWidth="19.00002316402606" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" spacing="15.0" style="-fx-background-color: #f7d46e; -fx-background-radius: 100;">
+                                 <children>
+                                    <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text=" ">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="PLUS" size="12" text="+" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <Label text="Start project">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="8.0" right="15.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="25.0">
+                                 <children>
+                                    <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" style="-fx-background-color: white; -fx-background-radius: 100; -fx-border-radius: 100; -fx-border-width: 0.25; -fx-border-color: #918699;" text=" " textFill="#9b5dda">
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="BELL_ALT" />
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT">
+                                 <children>
+                                    <JFXButton alignment="CENTER" contentDisplay="CENTER" text=" " textFill="#9b5dda">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#918699" glyphName="CARET_DOWN" />
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="40.0">
+                                       <image>
+                                          <Image url="@media/images.jpg" />
+                                       </image>
+                                    </GNAvatarView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="zone_center" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="35.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="Projects:" textFill="#9e8ed0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label maxWidth="1.7976931348623157E308" style="-fx-border-width: 0 0 0 4; -fx-border-color: #f7d46e;" text="167" textFill="#f7d46e">
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="Completed:" textFill="#9e8ed0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label maxWidth="1.7976931348623157E308" style="-fx-border-width: 0 0 0 4; -fx-border-color: #f7d46e;" text="136" textFill="#f7d46e">
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="In progress:" textFill="#9e8ed0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label maxWidth="1.7976931348623157E308" style="-fx-border-width: 0 0 0 4; -fx-border-color: #f7d46e;" text="19" textFill="#f7d46e">
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="Overdue" textFill="#9e8ed0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label maxWidth="1.7976931348623157E308" style="-fx-border-width: 0 0 0 4; -fx-border-color: #f7d46e;" text="12" textFill="#f7d46e">
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <JFXButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="10.0" text="All Projects" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="#b1a7b9" glyphName="CARET_DOWN" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                                 <padding>
+                                    <Insets right="35.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" styleClass="scale" text=" " textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../modelio/Downloads/up-chevron.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <GridPane hgap="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="40.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Berkshire Hathaway" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="HR Project Management" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Tim%20Berners-Lee.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="Completed" textFill="#8fe6bb">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="High priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="United Health Group" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Secure Backup Software System" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="In progress" textFill="#6c55d3">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="High priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="JP Morgan Chase" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Student Information Chatbot Project" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Tim%20Berners-Lee.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="Overdue" textFill="#fb8755">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Normal priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Berkshire Hathaway" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Topic Detection Using Keyword Kluster" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Donald%20Kuth.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Ken%20Thompson.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Anders%20Hejlsberg.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Tim%20Berners-Lee.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="In progress" textFill="#6c55d3">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Low priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="CVS Health" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Android Smart City Traveller" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="Overdue" textFill="#fb8755">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Low priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Ping An Insurance" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="E-banking For Log System" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Tim%20Berners-Lee.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="Completed" textFill="#8fe6bb">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="High priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Amerisource Bergen" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Secure online Auction System" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="In progress" textFill="#6c55d3">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Normal priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="zone-center-cell" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="10.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Axilweb Multinational" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="New Task" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS" size="13" text="+" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Label maxWidth="1.7976931348623157E308" text="Customer Targeted E-commerce" textFill="#bca9a9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="2.0">
+                                       <children>
+                                          <HBox maxWidth="1.7976931348623157E308">
+                                             <children>
+                                                <Label maxWidth="1.7976931348623157E308" text="Team" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="PM" textFill="#bca9a9" HBox.hgrow="ALWAYS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="17.0" right="17.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Guido%20van%20Rossum.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Tim%20Berners-Lee.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/920x920.jpg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                      <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                         <image>
+                                                            <Image url="@media/Linus%20Torvalds.jpeg" />
+                                                         </image>
+                                                      </GNAvatarView>
+                                                   </children>
+                                                </HBox>
+                                                <Label maxHeight="1.7976931348623157E308" style="-fx-background-color: white;" text=" ">
+                                                   <font>
+                                                      <Font size="6.0" />
+                                                   </font>
+                                                </Label>
+                                                <GNAvatarView maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="22.0" prefWidth="22.0" stroke="#f8f8f4">
+                                                   <image>
+                                                      <Image url="@media/110bcc96381025b9babe409c29b420c2.jpg" />
+                                                   </image>
+                                                </GNAvatarView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="15.0" right="15.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="3.0" left="2.0" right="2.0" top="3.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="2.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label style="-fx-background-color: #f8f8f4; -fx-background-radius: 100;" text="Completed" textFill="#8fe6bb">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="High priority" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" text="05 days ago" textFill="#8fe6bb" HBox.hgrow="ALWAYS">
+                                             <padding>
+                                                <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton alignment="CENTER" buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #f7d46e; -fx-background-radius: 100; -fx-background-color: white;" text="Join" textAlignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#ab840d" glyphName="CODE_FORK" size="13" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font name="System Bold" size="10.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="15.0" left="15.0" right="15.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" styleClass="scale" text=" " textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../modelio/Downloads/down-chevron.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding></VBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,19 @@
+.zone_center{
+	-fx-background-color: linear-gradient(to bottom, #513aa6, #f8f8f4);
+	-fx-background-radius:15 15 0 0;
+}
+
+.foreground {
+    -fx-background-color : transparent;
+}
+.zone-center-cell{
+	-fx-background-color : white;
+	-fx-background-radius:15;
+}
+.scale:hover{
+	-fx-background-radius: 5;
+    -fx-background-color: #f0e6e6;
+	-fx-scale-x : 1.05;
+    -fx-scale-y : 1.05;
+    -fx-cursor : hand;
+}
